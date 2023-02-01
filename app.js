@@ -1,6 +1,10 @@
 const container = document.querySelector(".container");
 const cells = document.querySelectorAll(".cell");
 
+// each players will have their score displayed
+const xScore = document.getElementById("x-score");
+const oScore = document.getElementById("o-score");
+
 let turn = true;
 
 class Player {

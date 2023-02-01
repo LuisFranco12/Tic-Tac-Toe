@@ -27,3 +27,17 @@ body {
     font-weight: bold;
     font-family: "Fredoka One", cursive;
   }
+
+  .p1 {
+    background-color: #6765bf;
+  }
+  
+  .p2 {
+    background-color: #92bdde;
+  }
+  
+  .p1,
+  .p2 {
+    transition: background-color 0.29s;
+  }
+  
