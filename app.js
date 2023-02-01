@@ -83,9 +83,11 @@ function game(e) {
     if (e.target.textContent) return;
     if (turn) {
       e.target.textContent = player1.symbol;
+      e.target.classList.add("p1");
       turn = !turn;
     } else {
       e.target.textContent = player2.symbol;
+      e.target.classList.add("p2");
       turn = !turn;
     }
     winner(player1);
