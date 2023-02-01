@@ -39,6 +39,19 @@ function checkWinner(player) {
     });
    }
 
+// checks for a draw
+function draw(p1, p2) {
+    return winCombinations.every((combo) => {
+      return combo.every((index) => {
+        return (
+          cells[index].textContent === p1.symbol ||
+          cells[index].textContent === p2.symbol
+        );
+      });
+    });
+  }
+
+
 // outputs the winner or a draw if there is no winner
 function winner(player) {
     setTimeout(() => {
@@ -52,6 +65,7 @@ function winner(player) {
       }
     }, 200);
   }
+  
 
 function game(e) {
     if (e.target.textContent) return;
