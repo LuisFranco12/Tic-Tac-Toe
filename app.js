@@ -1,6 +1,8 @@
 const container = document.querySelector(".container");
 const cells = document.querySelectorAll(".cell");
 
+let turn = true;
+
 function game(e) {
     if (e.target.textContent) return;
     if (turn) {
