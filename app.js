@@ -3,6 +3,16 @@ const cells = document.querySelectorAll(".cell");
 
 let turn = true;
 
+class Player {
+    constructor(num, symbol) {
+        this.num = num;
+        this.symbol = symbol;
+    }
+}
+
+const player1 = new Player(1, 'X');
+const player2 = new Player(2, 'O');
+
 function game(e) {
     if (e.target.textContent) return;
     if (turn) {
@@ -14,4 +24,4 @@ function game(e) {
     }
   }
 
-  container.addEventListener("click", game);
+container.addEventListener("click", game);
