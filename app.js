@@ -13,3 +13,5 @@ function game(e) {
       turn = !turn;
     }
   }
+
+  container.addEventListener("click", game);
