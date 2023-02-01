@@ -4,18 +4,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .container {
+.container {
     width: 500px;
     height: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
-  }
+}
 
-  .cell {
+.cell {
     background-color: #c5b8dd;
     color: white;
     border: 1px solid black;
@@ -26,22 +26,22 @@ body {
     font-size: 6rem;
     font-weight: bold;
     font-family: "Fredoka One", cursive;
-  }
+}
 
-  .p1 {
+.p1 {
     background-color: #6765bf;
-  }
+}
   
-  .p2 {
+.p2 {
     background-color: #92bdde;
-  }
+}
   
-  .p1,
-  .p2 {
+.p1,
+.p2 {
     transition: background-color 0.29s;
-  }
+}
   
-  .score {
+.score {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,3 +71,4 @@ p {
     padding-right: 30px;
     font-size: 25px;
 }
+

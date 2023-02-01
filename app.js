@@ -33,15 +33,15 @@ const winCombinations = [
     // diagonal
     [0, 4, 8],
     [2, 4, 6]
-  ];
+];
 
-  function reset() {
+function reset() {
     cells.forEach((cell) => {
-      cell.textContent = "";
-      cell.classList.remove("p1", "p2");
+        cell.textContent = "";
+        cell.classList.remove("p1", "p2");
     });
     turn = true;
-  }
+}
 
 // check for a winner
 function checkWinner(player) {
@@ -50,7 +50,7 @@ function checkWinner(player) {
         return cells[index].textContent === player.symbol;
       });
     });
-   }
+}
 
 // checks for a draw
 function draw(p1, p2) {
@@ -62,7 +62,7 @@ function draw(p1, p2) {
         );
       });
     });
-  }
+}
 
 
 // outputs the winner or a draw if there is no winner
@@ -77,7 +77,7 @@ function winner(player) {
         reset();
       }
     }, 200);
-  }
+}
 
 // updates the score
 function updateScore() {
@@ -89,8 +89,9 @@ function updateScore() {
       player2.score++;
       oScore.textContent = player2.score;
     }
-  }
+}
 
+  // game logic
 function game(e) {
     if (e.target.textContent) return;
     if (turn) {
@@ -105,6 +106,6 @@ function game(e) {
     winner(player1);
     winner(player2);
     updateScore()
-  }
+}
 
 container.addEventListener("click", game);
