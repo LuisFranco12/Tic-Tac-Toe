@@ -30,6 +30,16 @@ const winCombinations = [
     [2, 4, 6]
   ];
 
+  // check for a winner
+function checkWinner(player) {
+    return winCombinations.some((combo) => {
+      return combo.every((index) => {
+        return cells[index].textContent === player.symbol;
+      });
+    });
+  }
+  
+
 function game(e) {
     if (e.target.textContent) return;
     if (turn) {
