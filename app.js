@@ -11,6 +11,7 @@ class Player {
     constructor(num, symbol) {
         this.num = num;
         this.symbol = symbol;
+        this.score = 0;
     }
 }
 
@@ -78,6 +79,17 @@ function winner(player) {
     }, 200);
   }
 
+// updates the score
+function updateScore() {
+    if (checkWinner(player1)) {
+      player1.score++;
+      xScore.textContent = player1.score;
+    }
+    if (checkWinner(player2)) {
+      player2.score++;
+      oScore.textContent = player2.score;
+    }
+  }
 
 function game(e) {
     if (e.target.textContent) return;
@@ -92,6 +104,7 @@ function game(e) {
     }
     winner(player1);
     winner(player2);
+    updateScore()
   }
 
 container.addEventListener("click", game);
