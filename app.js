@@ -30,6 +30,14 @@ const winCombinations = [
     [2, 4, 6]
   ];
 
+  function reset() {
+    cells.forEach((cell) => {
+      cell.textContent = "";
+      cell.classList.remove("p1", "p2");
+    });
+    turn = true;
+  }
+
 // check for a winner
 function checkWinner(player) {
     return winCombinations.some((combo) => {
@@ -65,7 +73,7 @@ function winner(player) {
       }
     }, 200);
   }
-  
+
 
 function game(e) {
     if (e.target.textContent) return;
@@ -76,6 +84,8 @@ function game(e) {
       e.target.textContent = player2.symbol;
       turn = !turn;
     }
+    winner(player1);
+    winner(player2);
   }
 
 container.addEventListener("click", game);
