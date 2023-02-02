@@ -68,12 +68,13 @@ function draw(p1, p2) {
 // outputs the winner or a draw if there is no winner
 function winner(player) {
     setTimeout(() => {
-      if (draw(player1, player2)) {
-        alert("Draw");
-        reset();
-      }
       if (checkWinner(player)) {
         alert(`Player ${player.num} Wins!`);
+        reset();
+      }
+
+      if (draw(player1, player2)) {
+        alert("Draw");
         reset();
       }
     }, 200);
