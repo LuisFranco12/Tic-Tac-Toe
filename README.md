@@ -7,5 +7,8 @@ to play the game please click this [link](https://luisfranco12.github.io/Tic-Tac
 HTML5 was used to create the structure of the game and CSS3 was used to give the game a fun style. JavaScript was used for the game langauge as it is the language I am most comfortable with.
 
 ### Fork It
-If you'd like to play around with the code or add new features please clone this ropository by clicking the 'Fork' button in the top right.
-<img src ='file:///home/altered1/Pictures/Screenshots/Screenshot%20from%202023-02-05%2011-32-39.png'>
+If you'd like to play around with the code or add new features please fork this ropository by clicking the 'Fork' button in the top right.
+![Screenshot from 2023-02-05 11-32-39](https://user-images.githubusercontent.com/108766758/216840515-98c6c76b-f3ce-46ac-a6e9-e83803358baf.png)
+
+From there rename the repository if you wish, then click the 'Create fork' button.
+![Screenshot from 2023-02-05 11-41-16](https://user-images.githubusercontent.com/108766758/216840552-6e44e7d4-47c4-4a96-b9b5-43f8c9abf049.png)
