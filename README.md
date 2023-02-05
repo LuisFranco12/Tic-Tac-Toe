@@ -8,4 +8,4 @@ HTML5 was used to create the structure of the game and CSS3 was used to give the
 
 ### Fork It
 If you'd like to play around with the code or add new features please clone this ropository by clicking the 'Fork' button in the top right.
-![screenshot](file:///home/altered1/Pictures/Screenshots/Screenshot%20from%202023-02-05%2011-32-39.png)
+<img src ='file:///home/altered1/Pictures/Screenshots/Screenshot%20from%202023-02-05%2011-32-39.png'>
