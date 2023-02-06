@@ -6,7 +6,7 @@ to play the game please click this [link](https://luisfranco12.github.io/Tic-Tac
 ### Technologies 
 HTML5 was used to create the structure of the game and CSS3 was used to give the game a fun style. JavaScript was used for the game logic as it's the language I'm most comfortable with.
 
-### Issue Faced
+### Obstacle
 Getting the game to correctly check if it was a draw or if a player won was tricky, but ultimatly I was able to resolve this problem by using the Array.some() and Array.every() methods
 
 ### Fork It
