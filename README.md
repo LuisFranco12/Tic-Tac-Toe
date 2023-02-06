@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-A simple Javascript game to showcase my ability to use git and wrtie clean code.
+A simple Javascript game to showcase my ability to use git and write clean code.
 
 to play the game please click this [link](https://luisfranco12.github.io/Tic-Tac-Toe/).
 

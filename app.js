@@ -43,7 +43,7 @@ function reset() {
   turn = true;
 }
 
-// check for a winner
+// checks for a winner
 function checkWinner(player) {
   return winCombinations.some((combo) => {
     return combo.every((index) => {
